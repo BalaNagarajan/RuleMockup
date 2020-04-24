@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+    <head>
+       <!--Import Google Icon Font-->
+    <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"
+  />
+  <!--Import materialize.css-->
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="css/materialize.min.css"
+    media="screen,projection"
+  />
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body>
+       
+        <div class="container">
+    <form id="scheduleForm" class="col s12">
+            <div class=" blue darken-1  white-text">
+            <h5 class="center-align black-text">Carrier Rule Search</h5>
+            </div>
+            <div class="row">
+            <div class="input-field col s6">
+                
+                <select class="browser-default">
+                    <option value="1" selected>Insurance Carrier</option>
+                    <option value="2">Geico</option>
+                    <option value="3">StateFarm</option>
+                </select>
+            </div>
+            
+            <div class="input-field col s6">
+                
+                <select class="browser-default">
+                    <option value="1" selected>Location</option>
+                    <option value="2">Northeast</option>
+                    <option value="3">Southeast</option>
+                    <option value="4">Midwest</option>
+                    <option value="5">Southwest</option>
+                    <option value="6">West</option>
+                </select>
+            </div>
+          </div>
+           <div class="row">
+          <div class="col s9">  
+            <button class="btn waves-effect waves-light black "><i class="material-icons left">search</i>Search</button>
+           <button class="btn waves-effect waves-light black "><i class="material-icons left">add_box</i>Create Global Rule</button>
+           <button class="btn waves-effect waves-light black "><i class="material-icons left">add</i>Create Line Item Rule</button>
+           <a href="index.html"><button class="btn waves-effect waves-light black" data-target="basic">Back</button></a>
+          </div>
+         
+           </div>
+          
+          
+                         
+             <!-- COLLECTIONS To display link items -->
+             
+             <div>
+             
+             <table class="striped centered">
+              <thead class=" blue darken-1">
+                <tr>
+                    <th>Carrier Name</th>
+                    <th>Location</th>
+                    <th>Rule</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Geico</td>
+                  <td>Southeast</td>
+                  <td><a href="RuleDetail.html">"(Username == \"James\" AND User.login == \"JFrank\")"....</a></td>
+                </tr>
+                 <tr>
+                  <td>Geico</td>
+                  <td>Midwest</td>
+                  <td><a href="RuleDetail.html">"(Number > 5 AND Number < 5)"....</a></td>
+                </tr>
+                 <tr>
+                  <td>Geico</td>
+                  <td>Southwest</td>
+                  <td><a href="RuleDetail.html">"(Slider == 17 AND Date < \"23.04.2020\")"....</a></td>
+                </tr>
+              </tbody>
+            </table>
+            </div>
+       <!--     <ul class="pagination">
+                <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                <li class="active"><a href="#!">1</a></li>
+                <li class="waves-effect"><a href="#!">2</a></li>
+                <li class="waves-effect"><a href="#!">3</a></li>
+                <li class="waves-effect"><a href="#!">4</a></li>
+                <li class="waves-effect"><a href="#!">5</a></li>
+                <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+              </ul> -->
+
+    </form> 
+    
+</div>
+
+          <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    </body>
+    <script>
+    $( document ).ready(function(){
+      $(".button-collapse").sideNav();
+    })
+  </script>
+</html>
